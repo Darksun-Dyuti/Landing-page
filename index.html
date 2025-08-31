@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cobra Kai Dojo - Strike First, Strike Hard, No Mercy</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="utils.css" />
+
+  <script src="timer.js" defer></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body class="overflow-x-hidden">
+  <div class="container mx-auto">
+
+    <!-- Header -->
+    <header>
+      <nav class="flex justify-between navbar-container">
+        <div class="logo font-bold flex items-center">Cobra Kai Dojo</div>
+
+        <ul class="navbar flex items-center" id="navLinks">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#plans">Programs</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+          <li><button class="btn" onclick="document.querySelector('#contact').scrollIntoView({behavior:'smooth'})">Join Now</button></li>
+        </ul>
+
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+      </nav>
+      <hr>
+    </header>
+
+    <!-- Main -->
+    <main class="min-h-screen">
+      <!-- HERO -->
+      <section class="section1" id="home">
+        <div class="hero-wrap">
+          <div class="topleft">
+            <div class="text-center">
+              <img class="logoimg" src="cobra-logo.png" alt="Cobra Kai Logo">
+            </div>
+
+            <h1 class="my-1">The Legendary Cobra Kai Dojo Awaits You</h1>
+
+            <p class="lead">
+              Strike First. Strike Hard. No Mercy.<br>
+              Train with discipline, strength, and the fighting spirit that defines Cobra Kai.
+            </p>
+
+            <p class="deal">Special enrollment offer ends in <span id="demo"></span></p>
+
+            <div class="buttons">
+              <button class="btn" onclick="document.querySelector('#contact').scrollIntoView({behavior:'smooth'})">Join Now</button>
+              <button class="btn" onclick="document.querySelector('#contact').scrollIntoView({behavior:'smooth'})">Contact Us</button>
+            </div>
+          </div>
+
+          <div class="topright">
+            <img class="trainingimg" src="cobra-training.png" alt="Cobra Kai Training">
+          </div>
+        </div>
+      </section>
+
+      <hr>
+
+      <section class="section-about" id="about">
+        <h2>About Cobra Kai Dojo</h2>
+        <p class="about-text">
+          Cobra Kai Dojo is more than just a place to train — it’s a way of life.
+          Founded on the principles of discipline, strength, and courage, our dojo
+          prepares warriors to face life head-on with resilience and confidence.
+        </p>
+      </section>
+
+      <hr>
+
+      <!-- PLANS -->
+      <section class="section2" id="plans">
+        <h2>Training Plans</h2>
+        <p class="sublead">
+          Whether you’re new to martial arts or aiming for black belt mastery,
+          Cobra Kai has the perfect program to unleash your potential.
+        </p>
+
+        <div class="boxes">
+          <div class="box">
+            <h3>Beginner</h3>
+            <p class="price highlighted">₹0/month (Trial)</p>
+            <ul class="features">
+              <li>Basic karate techniques</li>
+              <li>2 Classes/week</li>
+              <li>Community access</li>
+              <li>Email support</li>
+            </ul>
+            <div class="box-cta"><button class="btn">Start Trial</button></div>
+          </div>
+
+          <div class="box">
+            <h3>Intermediate</h3>
+            <p class="price highlighted">₹150/month</p>
+            <ul class="features">
+              <li>Sparring practice</li>
+              <li>3 Classes/week</li>
+              <li>Dojo seminars</li>
+              <li>Email & phone support</li>
+            </ul>
+            <div class="box-cta"><button class="btn">Enroll Now</button></div>
+          </div>
+
+          <div class="box">
+            <h3>Black Belt</h3>
+            <p class="price highlighted">₹500/month</p>
+            <ul class="features">
+              <li>Unlimited training</li>
+              <li>Exclusive workshops</li>
+              <li>1-on-1 coaching</li>
+              <li>Advanced sparring</li>
+            </ul>
+            <div class="box-cta"><button class="btn">Enroll Now</button></div>
+          </div>
+        </div>
+
+        <!-- Compare Plans -->
+        <h2 class="compare-title">Compare Plans</h2>
+        <div class="table-container">
+          <table class="compare-table" aria-label="Compare training plans">
+            <thead>
+              <tr>
+                <th></th>
+                <th>Beginner</th>
+                <th>Intermediate</th>
+                <th>Black Belt</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>Weekly Classes</th>
+                <td>2</td>
+                <td>3</td>
+                <td>Unlimited</td>
+              </tr>
+              <tr>
+                <th>Sparring Practice</th>
+                <td>-</td>
+                <td>Yes</td>
+                <td>Yes</td>
+              </tr>
+              <tr>
+                <th>Workshops</th>
+                <td>-</td>
+                <td>Occasional</td>
+                <td>Exclusive</td>
+              </tr>
+              <tr>
+                <th>Belt Progression</th>
+                <td>Up to Yellow</td>
+                <td>Up to Brown</td>
+                <td>Black Belt Path</td>
+              </tr>
+              <tr>
+                <th>Community Access</th>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+              </tr>
+              <tr>
+                <th>1-on-1 Coaching</th>
+                <td>-</td>
+                <td>-</td>
+                <td>Yes</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <hr>
+
+      <!-- CONTACT -->
+      <section class="section3" id="contact">
+        <h2>Contact Us</h2>
+        <p class="contact-item">📞 <a href="tel:1234567890">1234567890</a></p>
+        <p class="contact-item">✉️ <a href="mailto:imtherealdragonwarrior@gmail.com">cobrakai@gmail.com</a></p>
+
+        <div class="social-links">
+          <a href="https://www.instagram.com/cobrakaiseries/" target="_blank" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.facebook.com/CobraKaiSeries" target="_blank" aria-label="Facebook">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="https://www.youtube.com/@cobrakai" target="_blank" aria-label="YouTube">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      © 2025 CobraKaiDojo.com | All rights reserved
+    </footer>
+  </div>
+
+  <!-- Mobile Navbar Toggle -->
+  <script>
+    function toggleMenu() {
+      document.getElementById("navLinks").classList.toggle("active");
+    }
+
+
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".navbar a").forEach(link => {
+        link.addEventListener("click", () => {
+          document.getElementById("navLinks").classList.remove("active");
+        });
+      });
+    });
+  </script>
+</body>
+</html>
