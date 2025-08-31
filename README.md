@@ -21,9 +21,3 @@ A responsive landing page designed to showcase the legendary Cobra Kai Dojo. Bui
 📸 Screenshot  
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/df58be40-5baf-4f90-94ff-1f9d9b9d59dd" />
 
-
-
-## 📂 Installation & Usage  
-1. Clone this repository:  
-   ```bash
-   git clone https://github.com/yourusername/cobra-kai-landing-page.git
